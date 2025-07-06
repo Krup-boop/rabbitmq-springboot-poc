@@ -1,0 +1,26 @@
+server:
+  port: 8084
+
+spring:
+  application:
+    name: producer-service
+
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: admin
+    password: admin123
+    virtual-host: /
+    template:
+      routing-key: tenant.data.queue
+      exchange: ""
+  security:
+      oauth2:
+        resourceserver:
+          jwt:
+            issuer-uri: https://cognito-idp.eu-north-1.amazonaws.com/eu-north-1_fg8QzhDko
+logging:
+  level:
+    com.poc.producer: INFO
+    org.springframework.amqp: INFO
+    org.springframework.security: DEBUG

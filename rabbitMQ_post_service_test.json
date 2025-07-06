@@ -1,0 +1,54 @@
+{
+	"info": {
+		"_postman_id": "b3ef0900-381f-4a95-8f26-79d7f093bee3",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41812455"
+	},
+	"item": [
+		{
+			"name": "POST request to Data ingest in rabbitMQ project",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJraWQiOiJIUGZNXC9paXhra1dFWlltTDFyVEtBRDgwMHI3UEU2VExKMmVSR3p4UTBcLzg9IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiI0a3ZhZm52MWFsMzVoYWs1Y280NW9sNnFqNyIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiZGVmYXVsdC1tMm0tcmVzb3VyY2Utc2VydmVyLXA3ZWduelwvcmVhZCIsImF1dGhfdGltZSI6MTc1MTgyMTQyOSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLmV1LW5vcnRoLTEuYW1hem9uYXdzLmNvbVwvZXUtbm9ydGgtMV9mZzhRemhEa28iLCJleHAiOjE3NTE4MjUwMjksImlhdCI6MTc1MTgyMTQyOSwidmVyc2lvbiI6MiwianRpIjoiM2RlOWUxMGUtNjMxMS00YjkzLWI0ZGYtMjUyYzI0MjMyYzJkIiwiY2xpZW50X2lkIjoiNGt2YWZudjFhbDM1aGFrNWNvNDVvbDZxajcifQ.UAVw5r5o3v-4GjRgiuS1m3X8FsJN002T_T9KflAhwoZTmIfvYoyvr_A7ViGiXgnY8JSkWWNwR4M8aM9vraT9XuINu18-ij2c0DWBeYq8jP3Y3Mp0Nt0oWzgngfemdxUeJFHorSjpUcGH-5JU9QJCyjWNN3UaBNkPidqnN7xVVPI7r2sM4LauGvVau8CgD1otMVSijJYn3Dun4XZo_-5fFmWsBUi5aeYHgQqykGpgfN7P0NNoUZCwNsOID2SF6rNy8pQB8qovIxTXumJwiMteemlqRTeVvn8_wVhWsufVJ71FUdCmDeIqvjkBAiLmTwJnoEHWVtuGVzavYHVogDHrbg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"tenant_id\": \"234324\",\r\n  \"data\": {\r\n    \"field1\": \"value1\",\r\n    \"field2\": \"value2\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8084/api/data/ingest",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"api",
+						"data",
+						"ingest"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
